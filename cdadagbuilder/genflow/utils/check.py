@@ -1,12 +1,11 @@
 """
+
 Main module responsible for preparing utilities for
 performing checks and various validations
+
 """
-from typing import Dict, List
-from airflow.exceptions import AirflowException
-import pandera as pa
-import pandera.extensions as extensions
-import pandas as pd
+
+from typing import List
 from pandas import DataFrame
 
 
@@ -26,14 +25,15 @@ def invalid_seq_number(build_order: List):
     return len(invalid_order)
 
 
-def check_empty_df(df: DataFrame):
+def check_empty_df(data_frame: DataFrame):
     """
-    Validate if the data frame is empty, if so the process would throw the error
+    Validate if the data frame is empty, if so the
+    process would throw the error
 
-    :param: df
+    :param: data_frame
     :type: DataFrame
     """
-    if df.empty:
+    if data_frame.empty:
         return 1
     else:
         return 0

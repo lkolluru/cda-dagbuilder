@@ -1,8 +1,0 @@
-apache-airflow>=1.10.0
-packaging
-pyyaml
-
-[dev]
-black
-pylint
-pytest

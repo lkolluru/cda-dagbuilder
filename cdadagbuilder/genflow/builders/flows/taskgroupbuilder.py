@@ -114,9 +114,7 @@ class TaskGroupBuilder:
 
             # Loop through all the configured tasks in the loop and prepare a task group
             for _task_group_index, _task_group in _task_groups.iterrows():
-                _task_group_name = _task_group[
-                    "variabletablegroupname"
-                ].lower()
+                _task_group_name = _task_group["variabletablegroupname"].lower()
 
                 # get task flow data only for the selected table group
                 _task_flow_data = TaskFlowDataSubset(

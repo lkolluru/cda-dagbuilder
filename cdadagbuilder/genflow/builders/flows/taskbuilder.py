@@ -122,9 +122,7 @@ class TaskBuilder:
             ).flowoperator
         if CLOUD_PUSH_REGEX.match(_task_fields.get_task_template_code):
             # Distcp operator to be executed from the dag
-            return CloudPush(
-                taskconfig=_task_config, dag=self.dag
-            ).flowoperator
+            return CloudPush(taskconfig=_task_config, dag=self.dag).flowoperator
         if BIGQUERY_RELOAD_PARTITION_REGEX.match(
             _task_fields.get_task_template_code
         ):
@@ -160,9 +158,7 @@ class TaskBuilder:
             and BIGQUERY_RELOAD_PARTITION_REGEX.match(
                 _task_fields.get_task_template_code
             )
-            and BIGQUERY_RELOAD_REGEX.match(
-                _task_fields.get_task_template_code
-            )
+            and BIGQUERY_RELOAD_REGEX.match(_task_fields.get_task_template_code)
             and BIGQUERY_REGEX.match(_task_fields.get_task_template_code)
             and CLOUD_PARTITION_CLEANUP_REGEX.match(
                 _task_fields.get_task_template_code

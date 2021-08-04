@@ -79,9 +79,7 @@ def run_data_profile(d_row: dict, **kwargs):
     # Handle result of validation
     if not results["success"]:
         raise AirflowException(
-            "{0} Validation of the data is not successful".format(
-                _ge_suitename
-            )
+            "{0} Validation of the data is not successful".format(_ge_suitename)
         )
     if results["success"]:
         print("validation_successful")
