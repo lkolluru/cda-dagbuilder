@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cda-dagbuilder
+Version: 0.1.0
+Summary: Prepare Dags Programmatically from YAML/csv configuration files
+Home-page: git@git.prod.pch.com:CustDataAnalytics/cdaflow/cdaairflow.git
+Author: Lakshmi Kolluru
+Author-email: lkolluru@pch.com
+License: MIT
+Description: UNKNOWN
+Keywords: dagbuilder
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.0
+Provides-Extra: dev
